@@ -1,7 +1,7 @@
 ---
 pagination:
   data: collections.posts
-  size: 7
+  size: 2
   alias: posts
 ---
 
@@ -15,10 +15,10 @@ pagination:
 {% block content %}
 
 <section class="post-feed">
-        {% for post in posts %}
-            {{ card(post) }}
-        {% endfor %}
-    </section>
+  {% for post in posts %}
+  {{ card(post) }}
+  {% endfor %}
+</section>
 
 
 {% endblock%}
